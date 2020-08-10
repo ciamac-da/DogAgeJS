@@ -3,42 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Human-Dog Age Converter</title>
     <script 
     src="dog.js"
     type="text/Javascript"
     >
-
         </script>
 </head>
-<body
->
-<div
-id="body"
->
+<body>
 
-    <b>Find out your Age in dog years</b>
-    <form action="" method="POST">
-        <table>
-            <tr>
-                <td>Enter your Age</td>
-                <td> <input type="text" name="myage" size="15"> </td>
-            </tr>
-            
-            <tr>
-                <td> 
-                    <input type="button" value="Calculate" onclick="cyears(this.form)"> 
-                </td>
-            </tr>
-            
-            <tr>
-                <td>Your Age in Dog Years is:</td>
-                <td> <input type="text" name="dogage" size="15"> </td>
-            </tr>
-            
-        </table>
-    </form>
-</div>
-    
+<div class="card cardStyle" style="width: 21rem;">
+    <h6 class="card-title headerStyle">Find out your Age in Dog years </h6>
+
+    <img src="./dog-child.jpg" class="card-img-top" alt="...">
+    <div class="card-body cardbodyStyle">
+      <form action="" method="POST">
+        <div class="form-control">
+          <input type="number" name="myage" class="form-control" step="1" placeholder="Enter your Age" pattern="([0-9]+.{0,1}[0-9]*,{0,1})*[0-9]" required>
+          <input type="button"  class="btn btn-warning" step="1"  onclick="cyears(this.form)" value="Calculate & Convert">
+          <input type="number" name="dogage" class="form-control" step="1" placeholder="Your Age in Dog years is">
+        </div>
+      </form>
+    </div>
+  </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

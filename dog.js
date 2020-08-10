@@ -1,9 +1,6 @@
 function cyears(form) {
-    form.dogage.value = form.myage.value *7
+     form.dogage.value = parseInt(form.myage.value) *7
 }
-
-
-
 
 function random_bg_color() {
     var x = Math.floor(Math.random() * 256);

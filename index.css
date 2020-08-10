@@ -1,0 +1,31 @@
+body{
+    font-family: 'Recursive', sans-serif !important;
+
+}
+
+.headerStyle {
+    margin: 5px;
+    background-color: blanchedalmond;
+    font-weight: bolder;
+    margin-bottom: 5px !important;
+    text-align: center;
+
+}
+
+.cardStyle {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+input{
+text-align: center;
+margin-bottom: 10px !important;
+}
+
+.cardbodyStyle {
+    background-color: blanchedalmond !important;
+
+}
